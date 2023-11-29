@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>OctaNet Project Tasks</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>OctaNet Project Tasks</h1>
+
+        <div id="tasks-container">
+            <!-- Tasks will be dynamically added here using JavaScript -->
+        </div>
+
+        <div id="add-task-container">
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <input type="date" id="deadline" placeholder="Set Deadline">
+            <select id="priority">
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            <input type="text" id="labels" placeholder="Add Labels (comma-separated)">
+            <button id="add-task-button" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div id="progress-container">
+            <h2>Progress Monitoring</h2>
+            <div id="progress-bar"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>

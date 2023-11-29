@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#tasks-container {
+    margin-top: 20px;
+}
+
+.task button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 10px; /* Added margin to separate it from the task label */
+}
+
+.task button:hover {
+    background-color: #c82333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.task label {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#add-task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered the items */
+    margin-top: 20px;
+}
+
+#new-task,
+#deadline,
+#priority,
+#labels {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 14px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#new-task:focus,
+#deadline:focus,
+#priority:focus,
+#labels:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+
+#progress-container {
+    margin-top: 30px;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #007bff;
+    width: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.task-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.task-details span {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+#add-task-button {
+    background-color: #4caf50; /* Updated background color */
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(75, 150, 50, 0.2); /* Updated box shadow */
+}
+
+#add-task-button:hover {
+    background-color: #45a049; /* Darker on hover for a subtle effect */
+    box-shadow: 0 4px 12px rgba(75, 150, 50, 0.4);
+}
+.task label {
+    flex-grow: 1;
+    margin-right: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.task-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.task-details span {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    text-align: left; /* Align text to the left */
+    flex-basis: 100%; /* Ensure each detail spans the full width */
+}
+.task {
+    display: flex;
+    flex-direction: column; /* Display task content in a column layout */
+    align-items: center; /* Align items horizontally in the center */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task label {
+    margin-bottom: 10px; /* Add space between label and details */
+    text-align: center; /* Align text to the center */
+}
+
+.task-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center; /* Align details horizontally in the center */
+}
+
+.task-details span {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    text-align: center; /* Align text to the center */
+}
+
+.task button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Add space between details and the delete button */
+}
+#new-task,
+#deadline,
+#priority,
+#labels {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 14px;
+    width: 75%; /* Set width to 25% of the container width minus margin */
+    font-size: 16px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#new-task:focus,
+#deadline:focus,
+#priority:focus,
+#labels:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
